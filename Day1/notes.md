@@ -1,6 +1,6 @@
-## Lets understand the curriculum for the exam first
+## มาทำความเข้าใจหลักสูตรสำหรับการสอบกันก่อน
 
-Kubernetes Fundamentals     46%
+ความรู้พื้นฐาน Kubernetes     46%
 ```
 Kubernetes Resources
 Kubernetes Architecture
@@ -11,7 +11,7 @@ Scheduling
 
 Container Orchestration     22%
 ```
-Container Orchestration Fundamentals
+ความรู้พื้นฐาน Container Orchestration
 Runtime
 Security
 Networking
@@ -32,15 +32,16 @@ Cloud Native Observability      8%
 ```
 Telemetry & Observability
 Prometheus
-Cost Management
+การจัดการต้นทุน (Cost Management)
 ```
 
 Cloud Native Application Delivery       8%
 ```
-Application Delivery Fundamentals
+ความรู้พื้นฐาน Application Delivery
 GitOps
 CI/CD
 ```
 
 
-KCNA exam is an online, proctored, multiple-choice exam.
+การสอบ KCNA เป็นการสอบแบบ Online ที่มีผู้คุมสอบ (Proctor) และเป็นแบบเลือกตอบ (Multiple-choice)
+https://training.linuxfoundation.org/certification/kubernetes-cloud-native-associate
