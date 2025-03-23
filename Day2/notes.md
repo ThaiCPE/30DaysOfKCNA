@@ -2,7 +2,7 @@
   
 - https://medium.com/@sathabhronchangchuea/kubernetest-ความเเตกต่างระว่าง-deployments-statefulsets-daemonsets-1ea91453e61e
   
-- CronJob Controller: รับผิดชอบในการจัดการ CronJob โดยจะจัดตารางการทำงานของ Job ตามกำหนดการของ CronJob (เช่น ทุกชั่วโมง) 
+- CronJob Controller: รับผิดชอบในการจัดการ CronJob โดยจะจัดตารางการทำงานของ Job ตามกำหนดการของ CronJob (เช่น ทุกชั่วโมง)  
 Job Creation: เมื่อถึงเวลาที่ CronJob ต้องทำงาน มันจะสร้าง Resource Job ซึ่ง Job นี้เป็นตัวแทนของงานที่ต้องดำเนินการ
 Job Controller: เมื่อ Job ถูกสร้างขึ้นแล้ว มันจะรับผิดชอบในการจัดการ Job นี้ โดยทำให้มั่นใจว่า Pod ที่ระบุโดย Job ได้ถูกสร้างและทำงานสำเร็จ
 Pod Execution: Job Controller สร้าง Pod หนึ่งตัวหรือมากกว่าตามข้อกำหนดของ Job โดย Pod เหล่านี้จะดำเนินการ (Execute) ตามงานที่กำหนดโดย Job และ Job Controller จะรอจนกว่า Pod จะทำงานเสร็จสมบูรณ์
