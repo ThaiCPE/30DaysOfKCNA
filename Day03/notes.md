@@ -1,7 +1,7 @@
 - บริการ Kubernetes ที่ไม่มีที่อยู่ IP ของ Cluster เรียกว่า Headless Service  
 Headless Service สร้างขึ้นโดยการตั้งค่า Field clusterIP เป็น None
 
-- CI/CD ย่อมาจาก Continuous Integration / Continuous Deployment
+- CI/CD ย่อมาจาก Continuous Integration / Continuous **Deployment**
 
 - Kubernetes Secrets ใช้เก็บข้อมูลที่ Sensitive เช่น รหัสผ่าน, Token OAuth และ Key SSH  
 ข้อมูลที่เก็บใน Secrets จะถูกเข้ารหัสแบบ base64 โดย Default อย่างไรก็ตาม สิ่งสำคัญที่ควรทราบคือการเข้ารหัสแบบ base64 ไม่ใช่การเข้ารหัสลับ—แต่เป็นเพียงรูปแบบการเข้ารหัสที่สามารถถอดกลับได้  
