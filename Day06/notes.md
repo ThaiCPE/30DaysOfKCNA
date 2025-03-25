@@ -15,6 +15,10 @@ Container Image ที่ปลอดภัย
 การควบคุมการเข้าถึง (RBAC)  
 การสื่อสารที่ปลอดภัย
   - Cloud/Infrastructure  
-การรักษาความปลอดภัยโครงสร้างพื้นฐาน
-การควบคุมการเข้าถึง
+การรักษาความปลอดภัยโครงสร้างพื้นฐาน  
+การควบคุมการเข้าถึง  
 การปฏิบัติตามข้อกำหนด
+
+- runsc (gVisor): เป็น Container Runtime แบบเบา (Lightweight) ที่ Run Container ภายใน Environment แบบ Sandbox โดยให้ Layer การแยกอิสระเพิ่มเติมด้วยการจำลอง User-space Kernel ซึ่งช่วยให้ Container มี Kernel ที่แยกออกมาโดยไม่มี Overhead ของ Virtualizaion เต็มรูปแบบ  
+Kata Container: เป็นโครงการ Open-source ที่รวมความปลอดภัยของ VM เข้ากับความเร็วและความสามารถในการจัดการ Container โดยใช้ VM แบบเบาเพื่อ Run แต่ละ Container ให้การแยกอิสระที่แข็งแรงระหว่าง Container โดยไม่มี Overhead ด้านประสิทธิภาพของ VM แบบดั้งเดิม  
+runsc (gVisor) และ Kata Container เป็น Container Runtime ที่ให้การแยกอิสระแบบ Sandbox เพิ่มเติมและความปลอดภัยที่สูงขึ้นเมื่อเทียบกับ Container Runtime แบบดั้งเดิมอย่าง Docker หรือ containerd
