@@ -6,4 +6,4 @@ Control Plane ประกอบด้วย Component ต่างๆ ที่
   - การพิสูจน์ตัวตน (Authentication)
   - Observability  
 
-องค์ประกอบเหล่านี้ทำงานร่วมกันเพื่อ Enable ความสามารถขั้นสูงใน Traffic Management, ความปลอดภัย, และ Observability ใน Microservices Environment แบบ Distribute
+  องค์ประกอบเหล่านี้ทำงานร่วมกันเพื่อ Enable ความสามารถขั้นสูงใน Traffic Management, ความปลอดภัย, และ Observability ใน Microservices Environment แบบ Distribute
