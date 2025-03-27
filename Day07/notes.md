@@ -7,3 +7,11 @@ Control Plane ประกอบด้วย Component ต่างๆ ที่
   - Observability  
 
   องค์ประกอบเหล่านี้ทำงานร่วมกันเพื่อ Enable ความสามารถขั้นสูงใน Traffic Management, ความปลอดภัย, และ Observability ใน Microservices Environment แบบ Distribute
+
+- Rook เป็นเครื่องมือที่มีคุณสมบัติต่างๆ เช่น:
+  - การปรับขนาดอัตโนมัติ (Self-scaling)
+  - การซ่อมแซมตัวเอง (Self-healing)
+  - การตรวจสอบและติดตาม (Monitoring)
+  - การทำให้งานจัดการจัดเก็บข้อมูลเป็นอัตโนมัติ  
+
+  Rook ช่วยลดความซับซ้อนในการจัดการระบบจัดเก็บข้อมูลแบบ Distribute และรวมเข้ากับ Kubernetes อย่างราบรื่น ช่วยให้ผู้ดูแลระบบสามารถ Deploy และจัดการ Cluster จัดเก็บข้อมูลได้ง่ายเช่นเดียวกับการ Deploy Sesource Kubernetes อื่นๆ
