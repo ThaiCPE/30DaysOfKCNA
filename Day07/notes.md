@@ -34,6 +34,6 @@ kube-public - สามารถเข้าถึงได้โดยทุก
 kube-node-lease - ใช้สำหรับเก็บ Object "lease" ที่เกี่ยวข้องกับแต่ละ Node ช่วยปรับปรุงประสิทธิภาพของ Node Heartbeat
 
 - ภายใน Kubernetes "Probe" หมายถึงกลไก Diagnostic ที่ใช้โดย Kubelet เพื่อตรวจสอบสุขภาพของ Container ที่ทำงานภายใน Pod, Probe ได้รับการกำหนดค่าภายใน PodSpec ของ Kubernetes Pod และใช้เพื่อกำหนดว่า Container ภายใน pod มีสุขภาพดีและพร้อมให้บริการ Traffic หรือไม่ มี Probe สามประเภท:
- - Liveness Probe: กำหนดว่า Container ยังคงทำงานอยู่และมีสุขภาพดีหรือไม่ หากล้มเหลว Kubernetes จะ Restart Container
- - Readiness Probe: กำหนดว่า Container พร้อมให้บริการ Traffic หรือไม่ หากล้มเหลว Pod จะถูกลบออกจากตัว Load Balancer และไม่มี Traffic ที่ถูกส่งไปยัง Pod นั้น
- - Startup Probe: คล้ายกับ Liveness Probe แต่ทำงานเฉพาะในช่วงเริ่มต้นของ Container เท่านั้น ช่วยหน่วงเวลา Liveness และ Readiness Probe จนกว่า App ภายใน Container จะ Start
+  - Liveness Probe: กำหนดว่า Container ยังคงทำงานอยู่และมีสุขภาพดีหรือไม่ หากล้มเหลว Kubernetes จะ Restart Container
+  - Readiness Probe: กำหนดว่า Container พร้อมให้บริการ Traffic หรือไม่ หากล้มเหลว Pod จะถูกลบออกจากตัว Load Balancer และไม่มี Traffic ที่ถูกส่งไปยัง Pod นั้น
+  - Startup Probe: คล้ายกับ Liveness Probe แต่ทำงานเฉพาะในช่วงเริ่มต้นของ Container เท่านั้น ช่วยหน่วงเวลา Liveness และ Readiness Probe จนกว่า App ภายใน Container จะ Start
