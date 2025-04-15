@@ -3,3 +3,4 @@ Headless Service เป็นประเภทของ Service ที่ไม
 
 ![image](https://github.com/user-attachments/assets/715e7b3b-848b-469b-99bb-68e9e63fac53)
 
+- Service Mesh คือชื่อของเครื่องมือที่จัดการการสื่อสารระหว่าง Pod โดย Inject Sidecar Proxy Container เข้าไปในแต่ละ Pod และนำทาง Traffic เครือข่ายผ่าน Proxy Container นั้น ตัวอย่างของ Service Mesh ที่นิยมใช้คือ Istio, Linkerd และ Consul Connect ซึ่งช่วยให้สามารถจัดการ Traffic ระหว่าง Microservices, การรักษาความปลอดภัย และการตรวจสอบการสื่อสารได้โดยไม่ต้องแก้ไข Code ของ App
