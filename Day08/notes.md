@@ -8,3 +8,5 @@
 - Cloud Controller Manager เป็นส่วนประกอบของ Kubernetes ที่รับผิดชอบในการจัดการ Resource และการ Integrate เฉพาะ Cloud รวมถึง Load Balancer ที่ให้บริการโดยผู้ให้บริการ Cloud มันโต้ตอบกับ API ของผู้ให้บริการ Cloud เพื่อจัดเตรียม กำหนดค่า และจัดการ Resource เช่น Load Balancer หาก IP Address ภายนอกของ Service ยังคงอยู่ในสถานะ "Pending" นั่นแสดงว่าอาจมีปัญหากับความสามารถของ Cloud Controller Manager ในการสื่อสารกับ API ของผู้ให้บริการ Cloud หรือในการจัดเตรียม Resource ที่จำเป็น
 
 - Pod เป็นหน่วยขนาดเล็กที่สุดของ Computing ที่สามารถสร้างและจัดการได้ใน Kubernetes (เหมือนกับฝูงวาฬหรือฝักถั่ว) คือกลุ่มของ Container หนึ่งตัวหรือมากกว่า ที่มีการ Share พื้นที่จัดเก็บและ Resource เครือข่าย และมีข้อกำหนดสำหรับวิธีการเรียกใช้ Container, Content ของ Pod จะถูกจัดวางในตำแหน่งเดียวกันและถูกกำหนดเวลาทำงานร่วมกันเสมอ และทำงานในบริบทที่ใช้ร่วมกัน, Pod จำลอง "Logical Host" เฉพาะ App: มันประกอบด้วย Container App หนึ่งตัวหรือมากกว่าซึ่งเชื่อมโยงกันอย่างแน่นหนา, ในบริบทที่ไม่ใช่ Cloud, App ที่ทำงานบนเครื่อง Physical หรือ VM เดียวกันมีความคล้ายคลึงกับ App Cloud ที่ทำงานบน Logical Host เดียวกัน
+
+- kubelet สามารถสื่อสารกับ Runtime ใดก็ได้ที่รองรับมาตรฐาน Container Runtime Interface (CRI)
